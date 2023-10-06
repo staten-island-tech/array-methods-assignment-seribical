@@ -1,4 +1,5 @@
 const guh = {
-things:['123','123','123','123']
+    
+things:['123','123','123']
 };
-console.log(guh.things);
+console.log(guh.thing.length);
