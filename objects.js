@@ -44,8 +44,6 @@ const array = [
 const array1 = array.filter((year1)=> year1);
 const array2 = array1.filter((year2)=> year2.birthyear > 2008);
 array2.forEach((birth)=> {
-    console.log(birth.firstname);});
-Object.values(array2).forEach(val => {
-    console.log(val.firstname);
-    console.log(val.birthyear);
+    console.log(birth.firstname);
+    console.log(birth.birthyear);
 });
