@@ -22,28 +22,31 @@ const array = [
     {
         firstname:'reelan',
         birthyear:2009,
-        numbers: [1,2,3,4],
+        numbers: [5,2,3,4],
     },
     {
         firstname:'tristian',
         birthyear:2007,
-        numbers: [1,2,3,4],
+        numbers: [1,6,3,4],
     },
     {
         firstname:'gaberials',
         birthyear:2010,
-        numbers: [1,2,3,4],
+        numbers: [1,2,7,4],
     },
     {
         firstname:'noahr',
         birthyear:2011,
-        numbers: [1,2,3,4],
+        numbers: [1,2,3,8],
     },
 ]
 
-const array1 = array.filter((year1)=> year1);
-const array2 = array1.filter((year2)=> year2.birthyear > 2008);
-array2.forEach((birth)=> {
-    console.log(birth.firstname);
-    console.log(birth.birthyear);
-});
+
+
+
+array.forEach((name)=> console.log(name.firstname));
+
+array.forEach((person)=> person.numbers.forEach((num) => console.log(num)));
+
+console.log(array.filter((year1)=> (year1.birthyear>2008)));
+
